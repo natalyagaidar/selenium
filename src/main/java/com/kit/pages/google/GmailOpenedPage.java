@@ -1,4 +1,4 @@
-package com.kit.pages;
+package com.kit.pages.google;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

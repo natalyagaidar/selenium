@@ -14,6 +14,8 @@ public class SearchPage extends ThomasCookBasePage{
     private WebElement nextBtn;
     private By nextBtnLocator = By.xpath("html/body/div[1]/search-results-page/div[4]/*[@class=\"col-xs-24 col-sm-18 col-sm-offset-6\"]/div/div/div[3]");
 
+
+
     public SearchPage(WebDriver webDriver) {
         super(webDriver);
     }
@@ -26,4 +28,6 @@ public class SearchPage extends ThomasCookBasePage{
         return webDriver.findElement(nextBtnLocator);
 
     }
+
+
 }

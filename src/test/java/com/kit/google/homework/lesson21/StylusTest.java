@@ -28,7 +28,7 @@ public class StylusTest {
         driver.manage().window().maximize();
     }
 
-    @Test
+    @Test(enabled = false)
     public void stylusPageOpenTest() {
         String searchText = "Sony Z2";
         WebElement searchField = driver.findElement(By.name("q"));

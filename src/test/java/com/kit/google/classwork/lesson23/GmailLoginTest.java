@@ -1,11 +1,12 @@
 package com.kit.google.classwork.lesson23;
 
 import com.kit.core.WebDriverTestBase;
-import com.kit.pages.GmailEnterLoginPage;
-import com.kit.pages.GmailEnterPasswordPage;
-import com.kit.pages.GmailLoginPage;
-import com.kit.pages.GmailOpenedPage;
+import com.kit.pages.google.GmailEnterPasswordPage;
+import com.kit.pages.google.GmailLoginPage;
+import com.kit.pages.google.GmailOpenedPage;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Stories;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -21,6 +22,8 @@ public class GmailLoginTest extends WebDriverTestBase {
 
 
     @Test
+    @Features("Google Search")
+    @Stories("777-1")
     public void loginButtonTest(){
         GmailLoginPage gmailLoginPage = new GmailLoginPage(webDriver);
         gmailLoginPage.open(gmailUrl);
